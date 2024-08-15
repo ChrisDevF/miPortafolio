@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/fondo2.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Cubrir toda la página */
+    background-attachment: fixed; /* Fijar la imagen al fondo */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    color: #ffffff; /* Texto blanco para contraste */
+}
+
+#fotoperfil{
+    position:fixed;
+}
+.navbar {
+    background-color: #000000;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+.nav-link:hover {
+    color: #4bee45 !important; /* Links en verde claro al pasar el cursor */
+}
+
+.jumbotron {
+    background: none; /* Quitar fondo de la jumbotron */
+    color: #1d1e20; /* Texto blanco para contraste */
+    height: 100vh; /* Altura completa de la ventana */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+h1, h2 {
+    color: #4bee45;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.767);
+}
+h4 {
+    color: #4bee45;
+}
+h5{
+    color: black;
+}
+.card {
+    margin-bottom: 20px;
+}
+
+#contacto .btn-info, #contacto .btn-success {
+    margin: 5px;
+}
+
+/* Agrega este CSS */
+.zoom {
+    transition: transform 0.2s;
+  }
+  
+  .zoom:hover {
+    transform: scale(2.1);
+  }
+  /* Oculta la imagen en dispositivos móviles */
+  @media only screen and (max-width: 768px || 1024) {
+    #fotoperfil {
+      display: none;
+    }
+  }
+  /* Deshabilita el zoom en dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .zoom:hover {
+      transform: none;
+      touch-action: none;
+    }
+  }

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container px-4">
+          <a class="navbar-brand" href="#">Mi Portafolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#acerca">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Header -->
+    <section id="inicio" class="jumbotron text-center">
+      <img
+        src="assets/img/fotoperfil.jpg"
+        class="img-fluid rounded-circle mb-3"
+        id="fotoperfil"
+        alt="Foto de Perfil"
+        style="max-width: 150px"
+      />
+      <h1 class="display-4">CHRISTIAN ORELLANA</h1>
+      <h2 class="lead">DEV FRONT_END JAVASCRIPT</h2>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="container my-5">
+      <h1 class="text-center"><b>Proyectos</b></h1><br><br>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card" data-toggle="modal" data-target="#modalProyecto2">
+            <img
+              src="assets/img/proyecto1.jpg"
+              class="card-img-top zoom"
+              alt="Proyecto 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 1</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" data-toggle="modal" data-target="#modalProyecto2">
+            <img
+              src="assets/img/proyecto2.jpg"
+              class="card-img-top zoom"
+              alt="Proyecto 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 2</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" data-toggle="modal" data-target="#modalProyecto2">
+            <img
+              src="assets/img/proyecto3.jpg"
+              class="card-img-top zoom"
+              alt="Proyecto 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 3</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Acerca de -->
+    <section id="acerca" class="container my-5">
+      <h1 class="text-center"><b>Acerca de</b></h1><br><br>
+      <h4 class="text-center">- Desarrollador Front-End Js TD 2024<br>
+        - Estudiante de Ingeniería en Sistemas Computacionales<br>
+        - Interesado en la creación de aplicaciones web responsivas y escalables<br>
+        - 
+      </h4>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="container my-5">
+      <h1 class="text-center"><b>Contacto</b></h1><br><br>
+      <form>
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" class="form-control" id="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+      <div class="text-center mt-3">
+        <a href="https://www.linkedin.com" class="btn btn-info">LinkedIn</a>
+        <a href="https://wa.me/+56993050395" class="btn btn-success"
+          >WhatsApp</a
+        >
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
